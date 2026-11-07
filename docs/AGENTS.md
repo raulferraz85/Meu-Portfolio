@@ -6,11 +6,11 @@ interativo e profissional.
 
 ## Tecnologias
 React, TypeScript, Vite, Tailwind CSS,
-Motion e React Router.
+Motion, React Router, Three.js e React Three Fiber.
 
 ## Identidade visual
 - Estética dark cinematic.
-- Personagem 3D pré-renderizado na Home.
+- Personagem GLB interativo na Home, com retrato estático como fallback (mudança solicitada em 06/11/2026).
 - Liquid Glass somente em barras e botões.
 - Interface responsiva e minimalista.
 

@@ -31,7 +31,7 @@ Página pessoal com rolagem vertical e as seguintes seções:
 
 1. Hero
    - Nome e apresentação.
-   - Personagem 3D pré-renderizado.
+   - Personagem GLB interativo com fallback estático, conforme solicitação de 06/11/2026.
    - Botão para explorar os projetos.
    - Barra de navegação flutuante.
 

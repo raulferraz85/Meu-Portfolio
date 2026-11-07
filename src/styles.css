@@ -35,11 +35,16 @@ main:focus { outline: none; }
 .avatar-stage { position: relative; isolation: isolate; min-width: 0; aspect-ratio: 4 / 5; background: radial-gradient(ellipse at 25% 48%, #8b7cf624, transparent 60%), radial-gradient(ellipse at 85% 60%, #6daaf71a, transparent 60%); }
 .avatar-stage::after { content: ''; position: absolute; z-index: -1; inset: 12% 9% 8%; border: 1px solid #a8b0c215; border-radius: 50% 50% 8px 8px; }
 .avatar-image { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
+.avatar-interactive, .avatar-poster { position: absolute; inset: 0; }
+.avatar-interactive { touch-action: pan-y; }
+.avatar-interactive.is-ready { cursor: pointer; }
+.avatar-poster { z-index: 1; pointer-events: none; }
+.avatar-canvas { width: 100%; height: 100%; }
 .avatar-placeholder { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .avatar-monogram { font-family: var(--font-display); font-weight: 500; font-size: clamp(100px, 14vw, 190px); letter-spacing: -12px; line-height: 1.2; color: var(--color-muted); }
 .avatar-monogram span { color: var(--color-accent); }
 .avatar-caption { color: var(--color-muted); font-size: 12px; }
-.stage-label { position: absolute; bottom: 1%; left: 50%; transform: translateX(-50%); white-space: nowrap; font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; color: var(--color-muted); }
+.stage-label { position: absolute; bottom: 1%; left: 50%; transform: translateX(-50%); white-space: nowrap; font-family: var(--font-mono); font-size: 9px; letter-spacing: 2px; color: var(--color-muted); pointer-events: none; }
 .eyebrow { font-family: var(--font-mono); color: var(--color-muted); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; }
 .hero-copy .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 22px; }
 .hero-copy .eyebrow span { width: 6px; height: 6px; border-radius: 50%; background: var(--color-accent); }
